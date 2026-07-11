@@ -1,0 +1,763 @@
+/* ==========================================
+   RESPONSIVE CSS
+   Portfolio v2
+========================================== */
+
+/* =========================
+Large Laptop
+========================= */
+
+@media (max-width:1400px){
+
+.hero,
+.about,
+.projects,
+.contact{
+
+padding-left:6%;
+padding-right:6%;
+
+}
+
+.image-border{
+
+width:430px;
+height:430px;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+}
+
+}
+
+/* =========================
+Laptop
+========================= */
+
+@media (max-width:1200px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+padding-top:160px;
+
+}
+
+.hero-content{
+
+order:2;
+
+}
+
+.hero-image{
+
+order:1;
+
+margin-bottom:50px;
+
+}
+
+.hero-text{
+
+margin:auto auto 40px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-social{
+
+justify-content:center;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-left{
+
+margin-bottom:40px;
+
+}
+
+.info-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.projects-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* =========================
+Tablet
+========================= */
+
+@media (max-width:992px){
+
+.nav-links{
+
+position:fixed;
+
+top:85px;
+
+right:-100%;
+
+width:300px;
+
+height:calc(100vh - 85px);
+
+background:rgba(10,10,10,.95);
+
+backdrop-filter:blur(20px);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-start;
+
+align-items:flex-start;
+
+padding:50px 35px;
+
+gap:30px;
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+right:0;
+
+}
+
+.menu-btn{
+
+display:block;
+
+color:var(--white);
+
+}
+
+.cv-btn{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:56px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.section-heading h2{
+
+font-size:40px;
+
+}
+
+.about-right h2{
+
+font-size:40px;
+
+}
+
+.image-border{
+
+width:380px;
+
+height:380px;
+
+}
+
+.timeline{
+
+padding-left:30px;
+
+}
+
+.timeline::before{
+
+left:10px;
+
+}
+
+.timeline-item::before{
+
+left:-33px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.certificate-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ==========================================
+   MOBILE DEVICES
+========================================== */
+
+@media (max-width:768px){
+
+section{
+
+padding:90px 6%;
+
+}
+
+.hero{
+
+padding-top:130px;
+
+gap:40px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+.hero-text{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:220px;
+
+text-align:center;
+
+}
+
+.image-border{
+
+width:320px;
+
+height:320px;
+
+}
+
+.floating-card{
+
+display:none;
+
+}
+
+.about{
+
+gap:50px;
+
+}
+
+.about-left img{
+
+width:320px;
+
+}
+
+.about-right h2{
+
+font-size:34px;
+
+}
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.project-image{
+
+height:220px;
+
+}
+
+.timeline{
+
+padding-left:25px;
+
+}
+
+.timeline::before{
+
+left:8px;
+
+}
+
+.timeline-item{
+
+padding:22px;
+
+}
+
+.timeline-item::before{
+
+left:-28px;
+
+width:18px;
+
+height:18px;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+}
+
+.footer-social{
+
+flex-wrap:wrap;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:576px){
+
+.navbar{
+
+padding:15px 5%;
+
+}
+
+.logo{
+
+font-size:28px;
+
+}
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+min-height:35px;
+
+}
+
+.hero-text{
+
+font-size:15px;
+
+}
+
+.image-border{
+
+width:270px;
+
+height:270px;
+
+border-radius:25px;
+
+}
+
+.image-border img{
+
+border-radius:20px;
+
+}
+
+.section-heading h2{
+
+font-size:30px;
+
+}
+
+.section-heading span{
+
+font-size:15px;
+
+}
+
+.about-right h2{
+
+font-size:30px;
+
+}
+
+.skill-card{
+
+padding:35px 20px;
+
+}
+
+.skill-card i{
+
+font-size:48px;
+
+}
+
+.project-content{
+
+padding:22px;
+
+}
+
+.project-content h3{
+
+font-size:22px;
+
+}
+
+.project-content p{
+
+font-size:15px;
+
+}
+
+.timeline-item h3{
+
+font-size:22px;
+
+}
+
+.timeline-item h4{
+
+font-size:16px;
+
+}
+
+.timeline-item p{
+
+font-size:15px;
+
+}
+
+.certificate-card{
+
+padding:35px 20px;
+
+}
+
+.certificate-card i{
+
+font-size:46px;
+
+}
+
+.stat-box{
+
+padding:35px 15px;
+
+}
+
+.stat-box h2{
+
+font-size:44px;
+
+}
+
+.contact-info h3{
+
+font-size:30px;
+
+}
+
+.contact-item{
+
+padding:15px;
+
+}
+
+.contact-item i{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+.contact-item span{
+
+font-size:14px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:16px;
+
+font-size:15px;
+
+}
+
+footer{
+
+padding:50px 5% 25px;
+
+}
+
+footer h2{
+
+font-size:30px;
+
+}
+
+.footer-social a{
+
+width:50px;
+
+height:50px;
+
+font-size:18px;
+
+}
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES
+========================================== */
+
+@media (max-width:380px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero h2{
+
+font-size:19px;
+
+}
+
+.hero-text{
+
+font-size:14px;
+
+}
+
+.image-border{
+
+width:230px;
+
+height:230px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+
+}
+
+.section-heading h2{
+
+font-size:26px;
+
+}
+
+.about-right h2{
+
+font-size:26px;
+
+}
+
+.project-content h3{
+
+font-size:20px;
+
+}
+
+.timeline-item{
+
+padding:18px;
+
+}
+
+.timeline-item h3{
+
+font-size:20px;
+
+}
+
+.contact-info h3{
+
+font-size:26px;
+
+}
+
+}
+
+/* ==========================================
+   LANDSCAPE DEVICES
+========================================== */
+
+@media (max-height:650px) and (orientation:landscape){
+
+.hero{
+
+min-height:auto;
+
+padding-top:120px;
+
+padding-bottom:70px;
+
+}
+
+}
+
+/* ==========================================
+   HOVER SUPPORT
+========================================== */
+
+@media (hover:none){
+
+.project-card:hover,
+.skill-card:hover,
+.info-card:hover,
+.timeline-item:hover,
+.certificate-card:hover,
+.stat-box:hover{
+
+transform:none;
+
+}
+
+.hero-social a:hover,
+.footer-social a:hover{
+
+transform:none;
+
+}
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
